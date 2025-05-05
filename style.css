@@ -2,7 +2,7 @@
 
 body{
 min-width:320px;
-
+width:100%;
 height:100%;
 overflow-x: hidden;
 -ms-overflow-style: none;
@@ -15,25 +15,27 @@ margin: 0;
 padding: 0;
 }
 
-.conteiner{ width: 100%;
+.conteiner{ width:100%;
   max-width: 1400px; 
-  margin: 0 auto; /
-/* padding:0 16px; */
+  margin: 0 auto; 
+ padding:0 16px; 
+ box-sizing: border-box;
 }
   .header {
     display:flex;
     justify-content: space-between;
    align-items: center;
     width:100%;
-    max-width: 1400px;
+     max-width: 1400px;
   min-height: 88px;
-  margin:0 auto;
+  margin:0 auto; 
+  background-color: #fff;
   }
 
   .header__button0{
     display: flex;
     gap:20px;
-    margin-left: 20px;
+     margin-left: 20px;
   }
 
   .header__button02{
@@ -66,7 +68,8 @@ margin-bottom: auto;}
 
   .header__bottom {
     
-    min-width:320px;
+   min-width:320px;
+   
     height:1px;
    background-color: #B8FFEC;
   }
@@ -80,24 +83,20 @@ margin-bottom: auto;}
     text-align: right;
     }
     
-  .parent{width:100%;
-    max-width: 1400px;
+  .parent{width:100vw;
+    max-width:1400px; 
     margin:0 auto;
-   
    background: #F8F8F8;
    }
   .parent__nav{
    display: flex;
-
 flex-direction: column;
-
-   
+overflow: hidden;
   }
   .parent__block-nav
   {
     margin-top: 20px;
     margin-left:16px;
-
  }
  .line 
  {
@@ -257,7 +256,7 @@ height: 24px;
   }
 
   .parent__imgg{min-width:320px;
-    height: auto;
+  min-height:176px;
 } 
   @font-face {
     font-family: TT Lakes;
@@ -333,7 +332,7 @@ height:160px;}}
    @media screen and (min-width:784px){.parent__block-nav1{overflow-x:auto;}} 
     
   
-  @media screen and (min-width:1120px){.parent__reviews{display:block;}}*/
+  @media screen and (min-width:1120px){.parent__reviews{display:block;}}
 
   @media screen and (min-width:1120px){
     .parent__nav, .header {
